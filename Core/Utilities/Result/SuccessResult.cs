@@ -10,19 +10,13 @@ namespace Core.Utilities.Result
 
     {
 
-        public SuccessResult(string message) : base(true, message) // base demek Result classı demek
+            public SuccessResult(string message) : base(true, message)
+            {
 
+            }
+            public SuccessResult() : base(true)
+            {
 
-        {
-
-        }
-
-        public SuccessResult(bool v, string customerAdded) : base(true) // mesaj vermedik base'in tek parametreli olanını çalıştır demek
-
-        {
-
-
-
+            }
         }
     }
-}
