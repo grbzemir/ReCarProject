@@ -22,7 +22,7 @@ namespace Entities.Concrete
 
         public decimal DailyPrice { get; set; } // Kiralama fiyatı 
 
-        public string Description { get; set; } // Açıklama 
+        public string? Description { get; set; } // Açıklama 
 
     }
 }

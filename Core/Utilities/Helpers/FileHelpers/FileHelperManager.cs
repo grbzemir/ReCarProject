@@ -10,7 +10,7 @@ namespace Core.Utilities.Helpers.FileHelpers
     public class FileHelperManager : IFileHelperService
     {
 
-
+        // Dosya Kayıt İşlemi
         public string Update(IFormFile file, string filePath, string root)
         {
             if (File.Exists(filePath))

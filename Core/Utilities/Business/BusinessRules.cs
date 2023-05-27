@@ -9,6 +9,8 @@ namespace Core.Utilities.Business
 {
     public class BusinessRules
     {
+        // Buranın amacı belirtilen iş kurallarını daha düzenli olarak okunmasına destek 
+        // params kullanuldığında istenildiği kadar IResult parametresi gönderilebilir.
         public static IResult Run(params IResult[] logics)
         {
             foreach (var logic in logics)

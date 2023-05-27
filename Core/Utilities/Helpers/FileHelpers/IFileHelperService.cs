@@ -7,6 +7,7 @@ using System.Threading.Tasks;
 
 namespace Core.Utilities.Helpers.FileHelpers
 {
+    // Dosya Kayıt İşlemi
     public interface IFileHelperService
     {
         string Upload(IFormFile file, string root);
