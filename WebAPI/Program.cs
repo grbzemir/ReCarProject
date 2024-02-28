@@ -33,7 +33,7 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
-// Autofac ile yapýlan iþlemler burada yapýlmaktadýr
+// Autofac ile yapÄ±lan iÅŸlemler burada yapÄ±lmaktadÄ±r
 builder.Host.UseServiceProviderFactory(services => new AutofacServiceProviderFactory())
     .ConfigureContainer<ContainerBuilder>(builder =>
     {
@@ -58,10 +58,6 @@ builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
         IssuerSigningKey = SecurityKeyHelper.CreateSecurityKey(tokenOptions.SecurityKey)
     };
 });
-
-//MyCarRentalProject
-
-
 
 var app = builder.Build();
 
